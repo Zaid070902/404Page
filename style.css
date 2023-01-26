@@ -1,0 +1,245 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(25, 25, 25);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hole {
+  background-color: rgb(22, 22, 22);
+  border-radius: 50%;
+  width: 650px;
+  height: 650px;
+  animation: scale 1s forwards reverse;
+  box-shadow: inset 0px 0px 20px 2px;
+  position: relative;
+  border: rgb(17, 17, 17) 1px solid;
+}
+
+.hole1 {
+  background-color: rgb(20, 20, 20);
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  animation: scale 1s forwards reverse;
+  box-shadow: inset 0px 0px 20px 2px;
+  position: absolute;
+  border: rgb(17, 17, 17) 1px solid;
+}
+
+.hole2 {
+  background-color: rgb(17, 17, 17);
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  animation: scale 1s forwards reverse;
+  box-shadow: inset 0px 0px 20px 2px;
+  position: absolute;
+  border: rgb(17, 17, 17) 1px solid;
+}
+
+.particle1 {
+  height: 50px;
+  width: 100px;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 200, 200),
+    rgb(0, 100, 100)
+  );
+  box-shadow: 0px 0px 20px 0px;
+  border-radius: 50px;
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  animation: slide 1s forwards reverse ease-in;
+}
+
+.particle2 {
+  height: 50px;
+  width: 100px;
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 200, 200),
+    rgb(0, 100, 100)
+  );
+  box-shadow: 0px 0px 20px 0px;
+  border-radius: 50px;
+  position: absolute;
+  top: 250px;
+  right: 350px;
+  animation: slide2 1s forwards reverse ease-in;
+}
+
+.particle3 {
+  height: 50px;
+  width: 100px;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 200, 200),
+    rgb(0, 100, 100)
+  );
+  box-shadow: 0px 0px 20px 0px;
+  border-radius: 50px;
+  position: absolute;
+  top: 400px;
+  left: 350px;
+  animation: slide 1s forwards reverse ease-in;
+}
+
+.particle4 {
+  height: 50px;
+  width: 100px;
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 200, 200),
+    rgb(0, 100, 100)
+  );
+  box-shadow: 0px 0px 20px 0px;
+  border-radius: 50px;
+  position: absolute;
+  top: 500px;
+  right: 150px;
+  animation: slide2 1s forwards reverse ease-in;
+}
+
+.h1 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  font-family: sans-serif;
+  animation: scale 1s forwards reverse;
+  text-shadow: 8px 5px 6px black;
+}
+
+@keyframes slide {
+  0% {
+  }
+
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+@keyframes slide2 {
+  0% {
+  }
+
+  100% {
+    transform: translateX(500%);
+  }
+}
+
+@keyframes scale {
+  0% {
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.eye1 {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 20px 2px;
+  transform: scale(0);
+
+  animation: appear 2s forwards 4s ease-out;
+}
+
+.iris1 {
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(to top, rgb(0, 200, 200), rgb(0, 100, 100));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 20px 2px;
+}
+
+.pupil1 {
+  height: 45px;
+  width: 45px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: inset 0px 0px 20px 2px;
+}
+
+.shine1 {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.eye2 {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 20px 2px;
+  transform: scale(0);
+  animation: appear 2s forwards 4s ease-out;
+}
+
+.iris2 {
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(to top, rgb(0, 200, 200), rgb(0, 100, 100));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 20px 2px;
+}
+
+.pupil2 {
+  height: 45px;
+  width: 45px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: inset 0px 0px 20px 2px;
+}
+
+.shine2 {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
